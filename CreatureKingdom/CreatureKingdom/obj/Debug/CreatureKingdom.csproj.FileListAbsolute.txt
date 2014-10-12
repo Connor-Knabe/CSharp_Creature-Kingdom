@@ -1,0 +1,32 @@
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe.config
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.pdb
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.csprojResolveAssemblyReference.cache
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\MainWindow.baml
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\MainWindow.g.cs
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\App.g.cs
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom_MarkupCompile.cache
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.g.resources
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.Properties.Resources.resources
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.csproj.GenerateResource.Cache
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.exe
+c:\users\dale\documents\visual studio 2012\Projects\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.pdb
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe.config
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.exe
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.pdb
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe.config
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.exe
+D:\FangWang\Course\C#\Fall14\Assignment\HW4\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.pdb
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe.config
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.exe
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.pdb
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.exe
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\bin\Debug\CreatureKingdom.pdb
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.csprojResolveAssemblyReference.cache
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\MainWindow.baml
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\MainWindow.g.cs
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\App.g.cs
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom_MarkupCompile.cache
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.g.resources
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.Properties.Resources.resources
+Z:\C# Development\CreatureKingdom_F14\CreatureKingdom\CreatureKingdom\obj\Debug\CreatureKingdom.csproj.GenerateResource.Cache
