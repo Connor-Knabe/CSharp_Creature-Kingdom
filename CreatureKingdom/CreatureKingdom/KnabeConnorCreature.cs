@@ -5,10 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CreatureKingdom {
-    class KnabeConnorCreature : Creature {
-
-
-
-
+    class KnabeConnorCreature {
     }
 }
