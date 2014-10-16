@@ -23,7 +23,7 @@ namespace CreatureKingdom {
         double dogWidth = 356;
         private Int32 waitTime;
         double incrementSize = 2.0;
-        double maxX = 0.0;
+        double maxX = 500;
 
 
         public KnabeConnorCreature(Canvas kingdom, Dispatcher dispatcher, Int32 waitTime = 100)
@@ -33,7 +33,7 @@ namespace CreatureKingdom {
                 dogImage = new Image();
                 dogImage.Width = dogWidth;
 
-                //rightBitmap = LoadBitmap(@"SmithMolly\left.png", 356);
+                leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", 356);
                 rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", 356);
 
         }
@@ -50,28 +50,9 @@ namespace CreatureKingdom {
 
 
         public override void Place(double x, double y){
-            String direction = "right";
+            dogImage.Source = rightBitmap;
+            goRight = true;
 
-
-  
-
-            switch (direction) {
-                case "right": {
-                        dogImage.Source = rightBitmap;
-                        goRight = true;
-                        break;
-                    }
-                case "left": {
-                        dogImage.Source = leftBitmap;
-                        goRight = false;
-                        break;
-                    }
-                default: {
-                        dogImage.Source = rightBitmap;
-                        goRight = true;
-                        break;
-                    }
-            }
 
             this.waitTime = 100;
             this.x = x;
@@ -95,20 +76,17 @@ namespace CreatureKingdom {
             while (true) {
                 if (goRight) {
                     x += incrementSize;
-
                     if (x > maxX) {
                         goRight = false;
                         SwitchBitmap(leftBitmap);
                     }
                 } else {
                     x -= incrementSize;
-
                     if (x < 0) {
                         goRight = true;
                         SwitchBitmap(rightBitmap);
                     }
                 }
-
                 UpdatePosition();
                 Thread.Sleep(waitTime);
             }
