@@ -21,7 +21,7 @@ namespace CreatureKingdom {
         private Thread posnThread = null;
         private Boolean goRight = true;
         double dogWidth = 356;
-        private Int32 waitTime;
+        //private Int32 waitTime;
         double incrementSize = 2.0;
         double maxX = 0;
 
@@ -45,7 +45,6 @@ namespace CreatureKingdom {
             dogImage.Source = rightBitmap;
             goRight = true;
 
-            this.waitTime = 100;
             this.x = x;
             this.y = y;
             kingdom.Children.Add(dogImage);
@@ -73,10 +72,9 @@ namespace CreatureKingdom {
                     }
                 }
                 maxX = kingdom.RenderSize.Width - dogWidth;
-                Console.WriteLine("KINGDOM in place" + kingdom.RenderSize.Width);
 
                 UpdatePosition();
-                Thread.Sleep(10);
+                Thread.Sleep(WaitTime);
             }
         }
 
@@ -89,6 +87,8 @@ namespace CreatureKingdom {
             Action action = () => { dogImage.Source = theBitmap; };
             dispatcher.BeginInvoke(action);
         }
+
+  
 
         
     }
