@@ -35,10 +35,12 @@ namespace CreatureKingdom
             // create each creature below
 
             // Example:
-            // creature = new SmithMollyCreature(kingdom, Dispatcher, 100);
+             creature = new KnabeConnorCreature(kingdom, Dispatcher, 100);
             // creature.Paused = true;
-            // creatures.Add(creature);
-            // creature.Place(200, 200);
+             creatures.Add(creature);
+             creature.Place(200, 200);
+            //MessageBox.Show(kingdom.RenderSize.Width.ToString());
+
 
             // creature = new SmithKarenCreature(kingdom, Dispatcher, 100);
             // creature.Paused = true;
