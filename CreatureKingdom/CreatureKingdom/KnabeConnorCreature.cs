@@ -33,8 +33,8 @@ namespace CreatureKingdom {
                 dogImage = new Image();
                 dogImage.Width = dogWidth;
 
-                rightBitmap = LoadBitmap(@"SmithMolly\left.png", 356);
-                //leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", 356);
+                //rightBitmap = LoadBitmap(@"SmithMolly\left.png", 356);
+                rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", 356);
 
         }
 
