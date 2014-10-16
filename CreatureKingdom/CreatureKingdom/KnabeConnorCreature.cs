@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 
 using System.Windows.Threading;
 using System.Threading;
+using System.Windows;
 
 namespace CreatureKingdom {
     class KnabeConnorCreature :Creature {
@@ -51,7 +52,6 @@ namespace CreatureKingdom {
             dogImage.SetValue(Canvas.LeftProperty, this.x);
             dogImage.SetValue(Canvas.TopProperty, this.y);
 
-            
             posnThread = new Thread(Position);
             posnThread.Start();
         }
@@ -88,7 +88,10 @@ namespace CreatureKingdom {
             dispatcher.BeginInvoke(action);
         }
 
-  
+        private void Size_Changed(SizeChangedEventArgs e) {
+            Console.WriteLine("Window has been resized");
+        }
+
 
         
     }
