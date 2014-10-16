@@ -53,6 +53,8 @@ namespace CreatureKingdom {
             String direction = "right";
 
 
+  
+
             switch (direction) {
                 case "right": {
                         dogImage.Source = rightBitmap;
@@ -77,10 +79,16 @@ namespace CreatureKingdom {
             kingdom.Children.Add(dogImage);
             dogImage.SetValue(Canvas.LeftProperty, this.x);
             dogImage.SetValue(Canvas.TopProperty, this.y);
-            /*
+            
             posnThread = new Thread(Position);
 
-            posnThread.Start();*/
+            posnThread.Start();
+
+            /*
+            while (!Paused) {
+                Console.WriteLine("Not paused");
+
+            }*/
         }
 
         void Position() {
