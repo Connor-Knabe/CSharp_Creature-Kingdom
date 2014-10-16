@@ -23,23 +23,17 @@ namespace CreatureKingdom {
         double dogWidth = 356;
         private Int32 waitTime;
         double incrementSize = 2.0;
-        double maxX = 500;
-
+        double maxX = 0;
 
         public KnabeConnorCreature(Canvas kingdom, Dispatcher dispatcher, Int32 waitTime = 100)
             : base(kingdom, dispatcher, waitTime) {
 
-                //this.waitTime = waitTime;
                 dogImage = new Image();
-                dogImage.Width = dogWidth;
 
-                leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", 356);
-                rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", 356);
-
+                leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", dogWidth);
+                rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", dogWidth);
         }
 
-        
-        
 
         public override void Shutdown(){
             if (posnThread != null) {
@@ -47,14 +41,9 @@ namespace CreatureKingdom {
             }
         }
 
-
-
         public override void Place(double x, double y){
-
-
             dogImage.Source = rightBitmap;
             goRight = true;
-
 
             this.waitTime = 100;
             this.x = x;
@@ -62,16 +51,10 @@ namespace CreatureKingdom {
             kingdom.Children.Add(dogImage);
             dogImage.SetValue(Canvas.LeftProperty, this.x);
             dogImage.SetValue(Canvas.TopProperty, this.y);
+
             
             posnThread = new Thread(Position);
-
             posnThread.Start();
-
-            /*
-            while (!Paused) {
-                Console.WriteLine("Not paused");
-
-            }*/
         }
 
         void Position() {
@@ -89,9 +72,11 @@ namespace CreatureKingdom {
                         SwitchBitmap(rightBitmap);
                     }
                 }
+                maxX = kingdom.RenderSize.Width - dogWidth;
+                Console.WriteLine("KINGDOM in place" + kingdom.RenderSize.Width);
 
                 UpdatePosition();
-                Thread.Sleep(waitTime);
+                Thread.Sleep(10);
             }
         }
 
