@@ -50,6 +50,8 @@ namespace CreatureKingdom {
 
 
         public override void Place(double x, double y){
+
+
             dogImage.Source = rightBitmap;
             goRight = true;
 
@@ -74,19 +76,20 @@ namespace CreatureKingdom {
 
         void Position() {
             while (true) {
-                if (goRight) {
+                if (goRight && !Paused) {
                     x += incrementSize;
                     if (x > maxX) {
                         goRight = false;
                         SwitchBitmap(leftBitmap);
                     }
-                } else {
+                } else if (!Paused) {
                     x -= incrementSize;
                     if (x < 0) {
                         goRight = true;
                         SwitchBitmap(rightBitmap);
                     }
                 }
+
                 UpdatePosition();
                 Thread.Sleep(waitTime);
             }
