@@ -26,13 +26,10 @@ namespace CreatureKingdom {
 
         public KnabeConnorCreature(Canvas kingdom, Dispatcher dispatcher, Int32 waitTime = 100)
             : base(kingdom, dispatcher, waitTime) {
-
-                dogImage = new Image();
-
-                leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", dogWidth);
-                rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", dogWidth);
+            dogImage = new Image();
+            leftBitmap = LoadBitmap(@"KnabeConnor\dogLeft.gif", dogWidth);
+            rightBitmap = LoadBitmap(@"KnabeConnor\dogRight.gif", dogWidth);
         }
-
 
         public override void Shutdown(){
             if (posnThread != null) {
@@ -69,12 +66,9 @@ namespace CreatureKingdom {
                         SwitchBitmap(rightBitmap);
                     }
                 }
-
                 if (kingdomWidth != kingdom.RenderSize.Width - dogWidth){
                     kingdomWidth = kingdom.RenderSize.Width - dogWidth;
-                    Console.WriteLine(kingdomWidth);
                 }
-
                 UpdatePosition();
                 Thread.Sleep(WaitTime);
             }
@@ -90,11 +84,10 @@ namespace CreatureKingdom {
             dispatcher.BeginInvoke(action);
         }
 
+        /*
         private void Size_Changed(SizeChangedEventArgs e) {
             Console.WriteLine("Window has been resized");
         }
-
-
-        
+         */
     }
 }
