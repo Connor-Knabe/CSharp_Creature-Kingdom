@@ -15,16 +15,14 @@ namespace CreatureKingdom {
     class KnabeConnorCreature :Creature {
         
 
-
         Image dogImage;
         BitmapImage leftBitmap;
         BitmapImage rightBitmap;
         private Thread posnThread = null;
         private Boolean goRight = true;
         double dogWidth = 356;
-        //private Int32 waitTime;
         double incrementSize = 2.0;
-        double maxX = 0;
+        double kingdomWidth = 0;
 
         public KnabeConnorCreature(Canvas kingdom, Dispatcher dispatcher, Int32 waitTime = 100)
             : base(kingdom, dispatcher, waitTime) {
@@ -60,7 +58,7 @@ namespace CreatureKingdom {
             while (true) {
                 if (goRight && !Paused) {
                     x += incrementSize;
-                    if (x > maxX) {
+                    if (x > kingdomWidth) {
                         goRight = false;
                         SwitchBitmap(leftBitmap);
                     }
@@ -71,7 +69,11 @@ namespace CreatureKingdom {
                         SwitchBitmap(rightBitmap);
                     }
                 }
-                maxX = kingdom.RenderSize.Width - dogWidth;
+
+                if (kingdomWidth != kingdom.RenderSize.Width - dogWidth){
+                    kingdomWidth = kingdom.RenderSize.Width - dogWidth;
+                    Console.WriteLine(kingdomWidth);
+                }
 
                 UpdatePosition();
                 Thread.Sleep(WaitTime);
